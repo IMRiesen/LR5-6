@@ -1,4 +1,4 @@
-﻿program zad6;
+program zad6;
 const n=5;
 var arr:array[1..n] of integer;
 i:integer;
@@ -13,7 +13,7 @@ begin
   k := True;
   for i:= 2 to n do
   begin
-    if arr[i] < arr[i-1] then
+    if (arr[i] < arr[i-1]) or ((i = n) and (arr[i] = arr[i-1])) then
     begin
       k := False;
       break;
